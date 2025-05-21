@@ -7,7 +7,7 @@ const HeroSection: React.FC = () => {
     <section 
       id="home"
       className="relative h-screen flex items-center justify-center bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/hero-restaurant.jpg')" }}
+      style={{ backgroundImage: "url('/lovable-uploads/44cc206b-2a48-4443-8aad-6e46fe209302.png')" }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-50" />
       

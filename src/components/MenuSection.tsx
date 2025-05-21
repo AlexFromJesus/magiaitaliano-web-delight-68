@@ -24,26 +24,26 @@ const menuData: MenuCategory[] = [
         name: "Bruschetta",
         description: "Pan tostado con tomates frescos, ajo, albahaca y aceite de oliva virgen extra",
         price: "€8.50",
-        image: "/images/bruschetta.jpg",
+        image: "/lovable-uploads/96ab9dfb-7d56-41b2-b445-a948adcbd0ee.png",
         popular: true
       },
       {
         name: "Carpaccio di Manzo",
         description: "Finas láminas de ternera cruda con rúcula, parmesano y reducción de balsámico",
         price: "€12.00",
-        image: "/images/carpaccio.jpg"
+        image: "/lovable-uploads/96ab9dfb-7d56-41b2-b445-a948adcbd0ee.png"
       },
       {
         name: "Mozzarella Caprese",
         description: "Mozzarella de búfala con tomates, albahaca y glaseado balsámico",
         price: "€10.50",
-        image: "/images/seafood-dish.jpg"
+        image: "/lovable-uploads/04eccf24-3f5f-4664-b072-3ca815a6df41.png"
       },
       {
         name: "Arancini",
         description: "Bolas de arroz fritas rellenas de ragú, guisantes y mozzarella",
         price: "€9.50",
-        image: "/images/chef-plating.jpg"
+        image: "/lovable-uploads/04eccf24-3f5f-4664-b072-3ca815a6df41.png"
       }
     ]
   },
@@ -54,26 +54,26 @@ const menuData: MenuCategory[] = [
         name: "Spaghetti alla Carbonara",
         description: "Espaguetis con panceta, huevos, queso pecorino y pimienta negra",
         price: "€14.50",
-        image: "/images/chef-plating.jpg",
+        image: "/lovable-uploads/04eccf24-3f5f-4664-b072-3ca815a6df41.png",
         popular: true
       },
       {
         name: "Linguine al Frutti di Mare",
         description: "Linguine con mariscos variados en una ligera salsa de tomate",
         price: "€18.00",
-        image: "/images/seafood-dish.jpg"
+        image: "/lovable-uploads/04eccf24-3f5f-4664-b072-3ca815a6df41.png"
       },
       {
         name: "Pappardelle al Ragù di Cinghiale",
         description: "Cintas anchas de pasta con ragú de jabalí y parmesano",
         price: "€16.50",
-        image: "/images/bruschetta.jpg"
+        image: "/lovable-uploads/96ab9dfb-7d56-41b2-b445-a948adcbd0ee.png"
       },
       {
         name: "Ravioli di Spinaci e Ricotta",
         description: "Raviolis caseros rellenos de espinacas y ricotta en salsa de mantequilla y salvia",
         price: "€15.00",
-        image: "/images/carpaccio.jpg",
+        image: "/lovable-uploads/96ab9dfb-7d56-41b2-b445-a948adcbd0ee.png",
         popular: true
       }
     ]
@@ -85,26 +85,26 @@ const menuData: MenuCategory[] = [
         name: "Margherita",
         description: "Salsa de tomate, mozzarella y albahaca fresca",
         price: "€12.00",
-        image: "/images/bruschetta.jpg",
+        image: "/lovable-uploads/96ab9dfb-7d56-41b2-b445-a948adcbd0ee.png",
         popular: true
       },
       {
         name: "Quattro Formaggi",
         description: "Mozzarella, gorgonzola, fontina y parmesano",
         price: "€14.50",
-        image: "/images/carpaccio.jpg"
+        image: "/lovable-uploads/96ab9dfb-7d56-41b2-b445-a948adcbd0ee.png"
       },
       {
         name: "Diavola",
         description: "Salsa de tomate, mozzarella, salami picante y hojuelas de chile",
         price: "€13.50",
-        image: "/images/seafood-dish.jpg"
+        image: "/lovable-uploads/04eccf24-3f5f-4664-b072-3ca815a6df41.png"
       },
       {
         name: "Prosciutto e Funghi",
         description: "Salsa de tomate, mozzarella, jamón y champiñones",
         price: "€14.00",
-        image: "/images/chef-plating.jpg"
+        image: "/lovable-uploads/04eccf24-3f5f-4664-b072-3ca815a6df41.png"
       }
     ]
   },
@@ -115,26 +115,26 @@ const menuData: MenuCategory[] = [
         name: "Ossobuco alla Milanese",
         description: "Osobuco de ternera estofado con verduras, vino blanco y caldo, servido con risotto de azafrán",
         price: "€22.00",
-        image: "/images/chef-plating.jpg"
+        image: "/lovable-uploads/04eccf24-3f5f-4664-b072-3ca815a6df41.png"
       },
       {
         name: "Branzino al Forno",
         description: "Lubina al horno con hierbas, limón y patatas asadas",
         price: "€24.50",
-        image: "/images/seafood-dish.jpg",
+        image: "/lovable-uploads/04eccf24-3f5f-4664-b072-3ca815a6df41.png",
         popular: true
       },
       {
         name: "Saltimbocca alla Romana",
         description: "Filetes de ternera con prosciutto y salvia, salteados en vino blanco",
         price: "€20.00",
-        image: "/images/bruschetta.jpg"
+        image: "/lovable-uploads/96ab9dfb-7d56-41b2-b445-a948adcbd0ee.png"
       },
       {
         name: "Pollo al Marsala",
         description: "Pechuga de pollo salteada con champiñones en salsa de vino Marsala",
         price: "€18.50",
-        image: "/images/carpaccio.jpg"
+        image: "/lovable-uploads/96ab9dfb-7d56-41b2-b445-a948adcbd0ee.png"
       }
     ]
   },
@@ -145,26 +145,26 @@ const menuData: MenuCategory[] = [
         name: "Tiramisu",
         description: "Capas de bizcochos empapados en café y crema de mascarpone",
         price: "€8.00",
-        image: "/images/chef-plating.jpg",
+        image: "/lovable-uploads/04eccf24-3f5f-4664-b072-3ca815a6df41.png",
         popular: true
       },
       {
         name: "Panna Cotta",
         description: "Crema de vainilla con coulis de frutos rojos",
         price: "€7.50",
-        image: "/images/seafood-dish.jpg"
+        image: "/lovable-uploads/04eccf24-3f5f-4664-b072-3ca815a6df41.png"
       },
       {
         name: "Cannoli Siciliani",
         description: "Tubos crujientes de masa rellenos de ricotta endulzada y chips de chocolate",
         price: "€7.00",
-        image: "/images/carpaccio.jpg"
+        image: "/lovable-uploads/96ab9dfb-7d56-41b2-b445-a948adcbd0ee.png"
       },
       {
         name: "Gelato Artigianale",
         description: "Selección de helados caseros (pregunte por los sabores del día)",
         price: "€6.50",
-        image: "/images/bruschetta.jpg",
+        image: "/lovable-uploads/96ab9dfb-7d56-41b2-b445-a948adcbd0ee.png",
         popular: true
       }
     ]
