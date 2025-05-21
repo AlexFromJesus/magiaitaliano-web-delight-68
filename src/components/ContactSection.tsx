@@ -13,8 +13,8 @@ const ContactSection: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Message Sent",
-      description: "We'll get back to you as soon as possible. Thank you!",
+      title: "Mensaje Enviado",
+      description: "Nos pondremos en contacto contigo lo antes posible. ¡Gracias!",
     });
     
     // Reset form
@@ -25,42 +25,42 @@ const ContactSection: React.FC = () => {
     <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-restaurant-dark mb-4 font-playfair">Contact Us</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-restaurant-dark mb-4 font-playfair">Contáctanos</h2>
           <div className="w-20 h-1 bg-restaurant-primary mx-auto mb-6"></div>
           <p className="text-restaurant-dark max-w-2xl mx-auto">
-            Have questions or want to get in touch? We'd love to hear from you!
+            ¿Tienes preguntas o quieres ponerte en contacto? ¡Nos encantaría saber de ti!
           </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold text-restaurant-primary mb-6 font-playfair">Get In Touch</h3>
+              <h3 className="text-2xl font-semibold text-restaurant-primary mb-6 font-playfair">Ponte en Contacto</h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <Label htmlFor="name">Name</Label>
-                    <Input id="name" placeholder="Your name" required />
+                    <Label htmlFor="name">Nombre</Label>
+                    <Input id="name" placeholder="Tu nombre" required />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="email">Email</Label>
-                    <Input id="email" type="email" placeholder="Your email" required />
+                    <Input id="email" type="email" placeholder="Tu correo electrónico" required />
                   </div>
                 </div>
                 
                 <div className="space-y-2">
-                  <Label htmlFor="subject">Subject</Label>
-                  <Input id="subject" placeholder="Message subject" required />
+                  <Label htmlFor="subject">Asunto</Label>
+                  <Input id="subject" placeholder="Asunto del mensaje" required />
                 </div>
                 
                 <div className="space-y-2">
-                  <Label htmlFor="message">Message</Label>
-                  <Textarea id="message" placeholder="Your message" rows={5} required />
+                  <Label htmlFor="message">Mensaje</Label>
+                  <Textarea id="message" placeholder="Tu mensaje" rows={5} required />
                 </div>
                 
                 <Button type="submit" className="bg-restaurant-primary hover:bg-restaurant-primary/90 text-white">
-                  Send Message
+                  Enviar Mensaje
                 </Button>
               </form>
             </div>
@@ -68,21 +68,21 @@ const ContactSection: React.FC = () => {
           
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold text-restaurant-primary mb-6 font-playfair">Information</h3>
+              <h3 className="text-2xl font-semibold text-restaurant-primary mb-6 font-playfair">Información</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start">
                   <MapPin className="h-5 w-5 text-restaurant-primary flex-shrink-0 mt-1" />
                   <div className="ml-4">
-                    <h4 className="font-medium text-restaurant-dark">Address</h4>
-                    <p className="text-restaurant-dark/70">Calle León y Castillo, 26-28<br />35003 Las Palmas de Gran Canaria<br />Spain</p>
+                    <h4 className="font-medium text-restaurant-dark">Dirección</h4>
+                    <p className="text-restaurant-dark/70">Calle León y Castillo, 26-28<br />35003 Las Palmas de Gran Canaria<br />España</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
                   <Phone className="h-5 w-5 text-restaurant-primary flex-shrink-0 mt-1" />
                   <div className="ml-4">
-                    <h4 className="font-medium text-restaurant-dark">Phone</h4>
+                    <h4 className="font-medium text-restaurant-dark">Teléfono</h4>
                     <p className="text-restaurant-dark/70">
                       <a href="tel:+34928123456" className="hover:text-restaurant-primary">+34 928 123 456</a>
                     </p>
@@ -94,7 +94,7 @@ const ContactSection: React.FC = () => {
                   <div className="ml-4">
                     <h4 className="font-medium text-restaurant-dark">Email</h4>
                     <p className="text-restaurant-dark/70">
-                      <a href="mailto:info@magiaitaliano.com" className="hover:text-restaurant-primary">info@magiaitaliano.com</a>
+                      <a href="mailto:info@mangiaitaliano.com" className="hover:text-restaurant-primary">info@mangiaitaliano.com</a>
                     </p>
                   </div>
                 </div>
@@ -102,15 +102,15 @@ const ContactSection: React.FC = () => {
                 <div className="flex items-start">
                   <Clock className="h-5 w-5 text-restaurant-primary flex-shrink-0 mt-1" />
                   <div className="ml-4">
-                    <h4 className="font-medium text-restaurant-dark">Opening Hours</h4>
-                    <p className="text-restaurant-dark/70">Monday - Friday: 12:00 PM - 11:00 PM<br />Saturday - Sunday: 12:00 PM - 12:00 AM</p>
+                    <h4 className="font-medium text-restaurant-dark">Horario de Apertura</h4>
+                    <p className="text-restaurant-dark/70">Lunes - Viernes: 12:00 - 23:00<br />Sábado - Domingo: 12:00 - 00:00</p>
                   </div>
                 </div>
               </div>
             </div>
             
             <div>
-              <h3 className="text-2xl font-semibold text-restaurant-primary mb-6 font-playfair">Location</h3>
+              <h3 className="text-2xl font-semibold text-restaurant-primary mb-6 font-playfair">Ubicación</h3>
               
               <div className="h-[300px] rounded-lg overflow-hidden">
                 <iframe 
@@ -121,7 +121,7 @@ const ContactSection: React.FC = () => {
                   allowFullScreen={true} 
                   loading="lazy" 
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Restaurant Location"
+                  title="Ubicación del Restaurante"
                 ></iframe>
               </div>
             </div>

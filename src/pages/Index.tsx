@@ -14,7 +14,7 @@ import ScrollToTop from '@/components/ScrollToTop';
 const Index = () => {
   useEffect(() => {
     // Updating the page title
-    document.title = "Magiaitaliano - Authentic Italian Restaurant in Las Palmas";
+    document.title = "MangiaItaliano - Restaurante Italiano Auténtico en Las Palmas";
     
     // Intersection Observer for animation on scroll
     const animateOnScrollObserver = new IntersectionObserver(

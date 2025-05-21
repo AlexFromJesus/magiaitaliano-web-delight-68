@@ -13,10 +13,10 @@ const HeroSection: React.FC = () => {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 font-playfair animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          Magia<span className="italic">italiano</span>
+          Mangia<span className="italic">italiano</span>
         </h1>
         <p className="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto font-light animate-fade-in" style={{ animationDelay: '0.4s' }}>
-          Experience the authentic taste of Italy in the heart of Las Palmas
+          Experimenta el auténtico sabor de Italia en el corazón de Las Palmas
         </p>
         <div className="space-x-4 animate-fade-in" style={{ animationDelay: '0.6s' }}>
           <Button 
@@ -24,15 +24,15 @@ const HeroSection: React.FC = () => {
             className="bg-restaurant-primary hover:bg-restaurant-primary/90 text-white font-medium"
             onClick={() => window.location.href = '#reservations'}
           >
-            Reserve a Table
+            Reservar una Mesa
           </Button>
           <Button 
             variant="outline" 
             size="lg" 
-            className="border-white text-white hover:bg-white hover:text-restaurant-primary"
+            className="bg-white/20 border-white text-white hover:bg-white hover:text-restaurant-primary"
             onClick={() => window.location.href = '#menu'}
           >
-            View Menu
+            Ver Menú
           </Button>
         </div>
       </div>

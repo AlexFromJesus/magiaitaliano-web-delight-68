@@ -8,9 +8,9 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <h3 className="text-2xl font-bold mb-6 font-playfair">Magia<span className="italic">italiano</span></h3>
+            <h3 className="text-2xl font-bold mb-6 font-playfair">Mangia<span className="italic">italiano</span></h3>
             <p className="mb-4 text-gray-300">
-              Experience the authentic taste of Italy in the heart of Las Palmas de Gran Canaria. We're dedicated to bringing the magic of Italian cuisine to your table.
+              Experimenta el auténtico sabor de Italia en el corazón de Las Palmas de Gran Canaria. Estamos dedicados a llevar la magia de la cocina italiana a tu mesa.
             </p>
             <div className="flex space-x-4">
               <a 
@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
                 <Instagram className="h-5 w-5" />
               </a>
               <a 
-                href="mailto:info@magiaitaliano.com" 
+                href="mailto:info@mangiaitaliano.com" 
                 className="h-10 w-10 rounded-full bg-restaurant-primary/20 flex items-center justify-center hover:bg-restaurant-primary transition-colors"
               >
                 <Mail className="h-5 w-5" />
@@ -39,49 +39,49 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h4 className="text-xl font-semibold mb-6 font-playfair">Opening Hours</h4>
+            <h4 className="text-xl font-semibold mb-6 font-playfair">Horario de Apertura</h4>
             <ul className="space-y-3">
               <li className="flex justify-between">
-                <span className="text-gray-300">Monday - Friday</span>
-                <span>12:00 PM - 11:00 PM</span>
+                <span className="text-gray-300">Lunes - Viernes</span>
+                <span>12:00 - 23:00</span>
               </li>
               <li className="flex justify-between">
-                <span className="text-gray-300">Saturday</span>
-                <span>12:00 PM - 12:00 AM</span>
+                <span className="text-gray-300">Sábado</span>
+                <span>12:00 - 00:00</span>
               </li>
               <li className="flex justify-between">
-                <span className="text-gray-300">Sunday</span>
-                <span>12:00 PM - 12:00 AM</span>
+                <span className="text-gray-300">Domingo</span>
+                <span>12:00 - 00:00</span>
               </li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-xl font-semibold mb-6 font-playfair">Contact Information</h4>
+            <h4 className="text-xl font-semibold mb-6 font-playfair">Información de Contacto</h4>
             <ul className="space-y-3">
               <li>
-                <span className="block text-gray-300">Address</span>
+                <span className="block text-gray-300">Dirección</span>
                 <span>Calle León y Castillo, 26-28</span>
                 <span className="block">35003 Las Palmas de Gran Canaria</span>
               </li>
               <li>
-                <span className="block text-gray-300">Phone</span>
+                <span className="block text-gray-300">Teléfono</span>
                 <a href="tel:+34928123456" className="hover:text-restaurant-primary">+34 928 123 456</a>
               </li>
               <li>
                 <span className="block text-gray-300">Email</span>
-                <a href="mailto:info@magiaitaliano.com" className="hover:text-restaurant-primary">info@magiaitaliano.com</a>
+                <a href="mailto:info@mangiaitaliano.com" className="hover:text-restaurant-primary">info@mangiaitaliano.com</a>
               </li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-gray-400">&copy; {new Date().getFullYear()} Magiaitaliano. All rights reserved.</p>
+          <p className="text-sm text-gray-400">&copy; {new Date().getFullYear()} Mangiaitaliano. Todos los derechos reservados.</p>
           <div className="mt-4 md:mt-0 flex space-x-6 text-sm text-gray-400">
-            <a href="#" className="hover:text-white">Privacy Policy</a>
-            <a href="#" className="hover:text-white">Terms of Service</a>
-            <a href="#" className="hover:text-white">Accessibility</a>
+            <a href="#" className="hover:text-white">Política de Privacidad</a>
+            <a href="#" className="hover:text-white">Términos de Servicio</a>
+            <a href="#" className="hover:text-white">Accesibilidad</a>
           </div>
         </div>
       </div>

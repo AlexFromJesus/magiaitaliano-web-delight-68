@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://magiaitaliano.com/sitemap.xml
+Sitemap: https://mangiaitaliano.com/sitemap.xml

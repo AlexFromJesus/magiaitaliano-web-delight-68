@@ -10,12 +10,12 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-  { name: 'Home', href: '#home' },
-  { name: 'About', href: '#about' },
-  { name: 'Menu', href: '#menu' },
-  { name: 'Gallery', href: '#gallery' },
-  { name: 'Reservations', href: '#reservations' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Inicio', href: '#home' },
+  { name: 'Nosotros', href: '#about' },
+  { name: 'Menú', href: '#menu' },
+  { name: 'Galería', href: '#gallery' },
+  { name: 'Reservas', href: '#reservations' },
+  { name: 'Contacto', href: '#contact' },
 ];
 
 const Navbar: React.FC = () => {
@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
               <span className={cn(
                 'text-2xl font-bold font-playfair tracking-tight transition-colors',
                 isScrolled ? 'text-restaurant-primary' : 'text-restaurant-light'
-              )}>Magia<span className="italic">italiano</span></span>
+              )}>Mangia<span className="italic">italiano</span></span>
             </a>
           </div>
           
@@ -67,7 +67,7 @@ const Navbar: React.FC = () => {
               className="bg-restaurant-primary hover:bg-restaurant-primary/90 text-white"
               onClick={() => window.location.href = '#reservations'}
             >
-              Reserve a Table
+              Reservar Mesa
             </Button>
           </nav>
           
@@ -80,7 +80,7 @@ const Navbar: React.FC = () => {
                 isScrolled ? 'text-restaurant-dark' : 'text-restaurant-light'
               )}
             >
-              <span className="sr-only">Open menu</span>
+              <span className="sr-only">Abrir menú</span>
               {isOpen ? (
                 <X className="h-6 w-6" aria-hidden="true" />
               ) : (
@@ -112,7 +112,7 @@ const Navbar: React.FC = () => {
                 setIsOpen(false);
               }}
             >
-              Reserve a Table
+              Reservar Mesa
             </Button>
           </div>
         </div>
