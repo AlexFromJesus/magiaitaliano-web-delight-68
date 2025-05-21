@@ -22,28 +22,28 @@ const menuData: MenuCategory[] = [
     items: [
       {
         name: "Bruschetta",
-        description: "Toasted bread topped with fresh tomatoes, garlic, basil, and extra virgin olive oil",
+        description: "Pan tostado con tomates frescos, ajo, albahaca y aceite de oliva virgen extra",
         price: "€8.50",
-        image: "https://images.unsplash.com/photo-1594834749740-74b3f6764be4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        image: "/images/bruschetta.jpg",
         popular: true
       },
       {
         name: "Carpaccio di Manzo",
-        description: "Thinly sliced raw beef with arugula, Parmesan, and balsamic reduction",
+        description: "Finas láminas de ternera cruda con rúcula, parmesano y reducción de balsámico",
         price: "€12.00",
-        image: "https://images.unsplash.com/photo-1615461469775-9842e04b5639?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        image: "/images/carpaccio.jpg"
       },
       {
         name: "Mozzarella Caprese",
-        description: "Buffalo mozzarella with tomatoes, basil, and balsamic glaze",
+        description: "Mozzarella de búfala con tomates, albahaca y glaseado balsámico",
         price: "€10.50",
-        image: "https://images.unsplash.com/photo-1608044723049-e72d2fce4c7e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        image: "/images/seafood-dish.jpg"
       },
       {
         name: "Arancini",
-        description: "Fried rice balls filled with ragù, peas, and mozzarella",
+        description: "Bolas de arroz fritas rellenas de ragú, guisantes y mozzarella",
         price: "€9.50",
-        image: "https://images.unsplash.com/photo-1613478881376-3f03ff442249?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        image: "/images/chef-plating.jpg"
       }
     ]
   },
@@ -52,28 +52,28 @@ const menuData: MenuCategory[] = [
     items: [
       {
         name: "Spaghetti alla Carbonara",
-        description: "Spaghetti with pancetta, eggs, pecorino cheese, and black pepper",
+        description: "Espaguetis con panceta, huevos, queso pecorino y pimienta negra",
         price: "€14.50",
-        image: "https://images.unsplash.com/photo-1600803907087-f56d462fd26b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        image: "/images/chef-plating.jpg",
         popular: true
       },
       {
         name: "Linguine al Frutti di Mare",
-        description: "Linguine with mixed seafood in a light tomato sauce",
+        description: "Linguine con mariscos variados en una ligera salsa de tomate",
         price: "€18.00",
-        image: "https://images.unsplash.com/photo-1560788784-66def4e5a65e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        image: "/images/seafood-dish.jpg"
       },
       {
         name: "Pappardelle al Ragù di Cinghiale",
-        description: "Wide pasta ribbons with wild boar ragù and Parmesan",
+        description: "Cintas anchas de pasta con ragú de jabalí y parmesano",
         price: "€16.50",
-        image: "https://images.unsplash.com/photo-1616299908398-9af1134ad522?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        image: "/images/bruschetta.jpg"
       },
       {
         name: "Ravioli di Spinaci e Ricotta",
-        description: "Homemade ravioli filled with spinach and ricotta in sage butter sauce",
+        description: "Raviolis caseros rellenos de espinacas y ricotta en salsa de mantequilla y salvia",
         price: "€15.00",
-        image: "https://images.unsplash.com/photo-1669038588240-f4bd8ea62326?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        image: "/images/carpaccio.jpg",
         popular: true
       }
     ]
@@ -83,28 +83,28 @@ const menuData: MenuCategory[] = [
     items: [
       {
         name: "Margherita",
-        description: "Tomato sauce, mozzarella, and fresh basil",
+        description: "Salsa de tomate, mozzarella y albahaca fresca",
         price: "€12.00",
-        image: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        image: "/images/bruschetta.jpg",
         popular: true
       },
       {
         name: "Quattro Formaggi",
-        description: "Mozzarella, gorgonzola, fontina, and Parmesan",
+        description: "Mozzarella, gorgonzola, fontina y parmesano",
         price: "€14.50",
-        image: "https://images.unsplash.com/photo-1595854341625-f33e596b7a5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        image: "/images/carpaccio.jpg"
       },
       {
         name: "Diavola",
-        description: "Tomato sauce, mozzarella, spicy salami, and chili flakes",
+        description: "Salsa de tomate, mozzarella, salami picante y hojuelas de chile",
         price: "€13.50",
-        image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        image: "/images/seafood-dish.jpg"
       },
       {
         name: "Prosciutto e Funghi",
-        description: "Tomato sauce, mozzarella, ham, and mushrooms",
+        description: "Salsa de tomate, mozzarella, jamón y champiñones",
         price: "€14.00",
-        image: "https://images.unsplash.com/photo-1627626775846-122b778965ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        image: "/images/chef-plating.jpg"
       }
     ]
   },
@@ -113,28 +113,28 @@ const menuData: MenuCategory[] = [
     items: [
       {
         name: "Ossobuco alla Milanese",
-        description: "Veal shanks braised with vegetables, white wine, and broth, served with saffron risotto",
+        description: "Osobuco de ternera estofado con verduras, vino blanco y caldo, servido con risotto de azafrán",
         price: "€22.00",
-        image: "https://images.unsplash.com/photo-1648306341426-41fac2eb12ed?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        image: "/images/chef-plating.jpg"
       },
       {
         name: "Branzino al Forno",
-        description: "Oven-baked sea bass with herbs, lemon, and roasted potatoes",
+        description: "Lubina al horno con hierbas, limón y patatas asadas",
         price: "€24.50",
-        image: "https://images.unsplash.com/photo-1551248429-40975aa4de74?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        image: "/images/seafood-dish.jpg",
         popular: true
       },
       {
         name: "Saltimbocca alla Romana",
-        description: "Veal cutlets with prosciutto and sage, sautéed in white wine",
+        description: "Filetes de ternera con prosciutto y salvia, salteados en vino blanco",
         price: "€20.00",
-        image: "https://images.unsplash.com/photo-1544360553-c071973c2f6f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        image: "/images/bruschetta.jpg"
       },
       {
         name: "Pollo al Marsala",
-        description: "Chicken breast sautéed with mushrooms in Marsala wine sauce",
+        description: "Pechuga de pollo salteada con champiñones en salsa de vino Marsala",
         price: "€18.50",
-        image: "https://images.unsplash.com/photo-1533652475678-4744e0c784b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        image: "/images/carpaccio.jpg"
       }
     ]
   },
@@ -143,28 +143,28 @@ const menuData: MenuCategory[] = [
     items: [
       {
         name: "Tiramisu",
-        description: "Layers of coffee-soaked ladyfingers and mascarpone cream",
+        description: "Capas de bizcochos empapados en café y crema de mascarpone",
         price: "€8.00",
-        image: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        image: "/images/chef-plating.jpg",
         popular: true
       },
       {
         name: "Panna Cotta",
-        description: "Vanilla cream with mixed berry coulis",
+        description: "Crema de vainilla con coulis de frutos rojos",
         price: "€7.50",
-        image: "https://images.unsplash.com/photo-1600718374662-0483d2b9da44?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        image: "/images/seafood-dish.jpg"
       },
       {
         name: "Cannoli Siciliani",
-        description: "Crisp pastry tubes filled with sweetened ricotta and chocolate chips",
+        description: "Tubos crujientes de masa rellenos de ricotta endulzada y chips de chocolate",
         price: "€7.00",
-        image: "https://images.unsplash.com/photo-1622673038950-8cefc0251351?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        image: "/images/carpaccio.jpg"
       },
       {
         name: "Gelato Artigianale",
-        description: "Selection of homemade gelato (ask for today's flavors)",
+        description: "Selección de helados caseros (pregunte por los sabores del día)",
         price: "€6.50",
-        image: "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        image: "/images/bruschetta.jpg",
         popular: true
       }
     ]
@@ -201,10 +201,10 @@ const MenuSection: React.FC = () => {
     <section id="menu" className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8" ref={sectionRef}>
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-restaurant-dark mb-4 font-playfair">Our Menu</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-restaurant-dark mb-4 font-playfair">Nuestro Menú</h2>
           <div className="w-20 h-1 bg-restaurant-primary mx-auto mb-6"></div>
           <p className="text-restaurant-dark max-w-2xl mx-auto">
-            Discover our selection of authentic Italian dishes, made with love and the finest ingredients.
+            Descubre nuestra selección de auténticos platos italianos, hechos con amor y los mejores ingredientes.
           </p>
         </div>
         
@@ -250,7 +250,7 @@ const MenuSection: React.FC = () => {
                         <h4 className="text-xl font-semibold text-restaurant-dark font-playfair">
                           {item.name}
                           {item.popular && (
-                            <span className="ml-2 inline-block bg-restaurant-primary text-white text-xs px-2 py-1 rounded-full">Chef's Choice</span>
+                            <span className="ml-2 inline-block bg-restaurant-primary text-white text-xs px-2 py-1 rounded-full">Elección del Chef</span>
                           )}
                         </h4>
                         <span className="text-lg font-semibold text-restaurant-primary">{item.price}</span>
@@ -266,13 +266,13 @@ const MenuSection: React.FC = () => {
         
         <div className="text-center mt-16">
           <p className="text-restaurant-dark italic mb-4">
-            "Our menu changes seasonally to feature the freshest ingredients available."
+            "Nuestro menú cambia según la temporada para ofrecer los ingredientes más frescos disponibles."
           </p>
           <a 
             href="#reservations" 
             className="inline-block bg-restaurant-primary text-white py-3 px-6 rounded-lg hover:bg-restaurant-primary/90 transition-colors font-medium"
           >
-            Reserve Your Table
+            Reserva Tu Mesa
           </a>
         </div>
       </div>
