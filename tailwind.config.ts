@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,19 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				restaurant: {
+					'primary': '#8B0000',    // Deep burgundy red
+					'secondary': '#556B2F',  // Olive green
+					'accent': '#F5F5DC',     // Creamy beige 
+					'dark': '#4A2511',       // Rich brown
+					'light': '#FFFFFF',      // White
+					'gold': '#D4AF37',       // Gold accent
 				}
+			},
+			fontFamily: {
+				'playfair': ['Playfair Display', 'serif'],
+				'lato': ['Lato', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,12 +97,27 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+				'fade-in': {
+					'0%': { 
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': { 
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out forwards',
+			},
+			backgroundImage: {
+				'hero-pattern': "url('/images/hero-bg.jpg')",
+				'texture': "url('/images/italian-texture.jpg')",
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
