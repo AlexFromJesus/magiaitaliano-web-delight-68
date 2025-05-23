@@ -24,26 +24,26 @@ const menuData: MenuCategory[] = [
         name: "Bruschetta",
         description: "Pan tostado con tomates frescos, ajo, albahaca y aceite de oliva virgen extra",
         price: "€8.50",
-        image: "/lovable-uploads/96ab9dfb-7d56-41b2-b445-a948adcbd0ee.png",
+        image: "https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
         popular: true
       },
       {
         name: "Carpaccio di Manzo",
         description: "Finas láminas de ternera cruda con rúcula, parmesano y reducción de balsámico",
         price: "€12.00",
-        image: "/lovable-uploads/96ab9dfb-7d56-41b2-b445-a948adcbd0ee.png"
+        image: "https://images.unsplash.com/photo-1633436375173-d67ed2d23fd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       },
       {
         name: "Mozzarella Caprese",
         description: "Mozzarella de búfala con tomates, albahaca y glaseado balsámico",
         price: "€10.50",
-        image: "/lovable-uploads/04eccf24-3f5f-4664-b072-3ca815a6df41.png"
+        image: "https://images.unsplash.com/photo-1546039907-7fa05f864c02?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80"
       },
       {
         name: "Arancini",
         description: "Bolas de arroz fritas rellenas de ragú, guisantes y mozzarella",
         price: "€9.50",
-        image: "/lovable-uploads/04eccf24-3f5f-4664-b072-3ca815a6df41.png"
+        image: "https://images.unsplash.com/photo-1633436375173-d67ed2d23fd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       }
     ]
   },
@@ -54,26 +54,26 @@ const menuData: MenuCategory[] = [
         name: "Spaghetti alla Carbonara",
         description: "Espaguetis con panceta, huevos, queso pecorino y pimienta negra",
         price: "€14.50",
-        image: "/lovable-uploads/04eccf24-3f5f-4664-b072-3ca815a6df41.png",
+        image: "https://images.unsplash.com/photo-1612874742237-6526221588e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
         popular: true
       },
       {
         name: "Linguine al Frutti di Mare",
         description: "Linguine con mariscos variados en una ligera salsa de tomate",
         price: "€18.00",
-        image: "/lovable-uploads/04eccf24-3f5f-4664-b072-3ca815a6df41.png"
+        image: "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       },
       {
         name: "Pappardelle al Ragù di Cinghiale",
         description: "Cintas anchas de pasta con ragú de jabalí y parmesano",
         price: "€16.50",
-        image: "/lovable-uploads/96ab9dfb-7d56-41b2-b445-a948adcbd0ee.png"
+        image: "https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
       },
       {
         name: "Ravioli di Spinaci e Ricotta",
         description: "Raviolis caseros rellenos de espinacas y ricotta en salsa de mantequilla y salvia",
         price: "€15.00",
-        image: "/lovable-uploads/96ab9dfb-7d56-41b2-b445-a948adcbd0ee.png",
+        image: "https://images.unsplash.com/photo-1587740908075-9e245715d5e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80",
         popular: true
       }
     ]
@@ -85,26 +85,26 @@ const menuData: MenuCategory[] = [
         name: "Margherita",
         description: "Salsa de tomate, mozzarella y albahaca fresca",
         price: "€12.00",
-        image: "/lovable-uploads/96ab9dfb-7d56-41b2-b445-a948adcbd0ee.png",
+        image: "https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
         popular: true
       },
       {
         name: "Quattro Formaggi",
         description: "Mozzarella, gorgonzola, fontina y parmesano",
         price: "€14.50",
-        image: "/lovable-uploads/96ab9dfb-7d56-41b2-b445-a948adcbd0ee.png"
+        image: "https://images.unsplash.com/photo-1565564194296-14db6e0bf8a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
       },
       {
         name: "Diavola",
         description: "Salsa de tomate, mozzarella, salami picante y hojuelas de chile",
         price: "€13.50",
-        image: "/lovable-uploads/04eccf24-3f5f-4664-b072-3ca815a6df41.png"
+        image: "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
       },
       {
         name: "Prosciutto e Funghi",
         description: "Salsa de tomate, mozzarella, jamón y champiñones",
         price: "€14.00",
-        image: "/lovable-uploads/04eccf24-3f5f-4664-b072-3ca815a6df41.png"
+        image: "https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
       }
     ]
   },
@@ -115,26 +115,26 @@ const menuData: MenuCategory[] = [
         name: "Ossobuco alla Milanese",
         description: "Osobuco de ternera estofado con verduras, vino blanco y caldo, servido con risotto de azafrán",
         price: "€22.00",
-        image: "/lovable-uploads/04eccf24-3f5f-4664-b072-3ca815a6df41.png"
+        image: "https://images.unsplash.com/photo-1626509653291-20ca7b31d7e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       },
       {
         name: "Branzino al Forno",
         description: "Lubina al horno con hierbas, limón y patatas asadas",
         price: "€24.50",
-        image: "/lovable-uploads/04eccf24-3f5f-4664-b072-3ca815a6df41.png",
+        image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
         popular: true
       },
       {
         name: "Saltimbocca alla Romana",
         description: "Filetes de ternera con prosciutto y salvia, salteados en vino blanco",
         price: "€20.00",
-        image: "/lovable-uploads/96ab9dfb-7d56-41b2-b445-a948adcbd0ee.png"
+        image: "https://images.unsplash.com/photo-1598514983318-2f64f8f4796c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       },
       {
         name: "Pollo al Marsala",
         description: "Pechuga de pollo salteada con champiñones en salsa de vino Marsala",
         price: "€18.50",
-        image: "/lovable-uploads/96ab9dfb-7d56-41b2-b445-a948adcbd0ee.png"
+        image: "https://images.unsplash.com/photo-1651966753749-4cfa606a2d5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
       }
     ]
   },
@@ -145,26 +145,26 @@ const menuData: MenuCategory[] = [
         name: "Tiramisu",
         description: "Capas de bizcochos empapados en café y crema de mascarpone",
         price: "€8.00",
-        image: "/lovable-uploads/04eccf24-3f5f-4664-b072-3ca815a6df41.png",
+        image: "https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
         popular: true
       },
       {
         name: "Panna Cotta",
         description: "Crema de vainilla con coulis de frutos rojos",
         price: "€7.50",
-        image: "/lovable-uploads/04eccf24-3f5f-4664-b072-3ca815a6df41.png"
+        image: "https://images.unsplash.com/photo-1488477304112-4944851de03d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
       },
       {
         name: "Cannoli Siciliani",
         description: "Tubos crujientes de masa rellenos de ricotta endulzada y chips de chocolate",
         price: "€7.00",
-        image: "/lovable-uploads/96ab9dfb-7d56-41b2-b445-a948adcbd0ee.png"
+        image: "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       },
       {
         name: "Gelato Artigianale",
         description: "Selección de helados caseros (pregunte por los sabores del día)",
         price: "€6.50",
-        image: "/lovable-uploads/96ab9dfb-7d56-41b2-b445-a948adcbd0ee.png",
+        image: "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
         popular: true
       }
     ]

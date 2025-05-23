@@ -7,9 +7,11 @@ const HeroSection: React.FC = () => {
     <section 
       id="home"
       className="relative h-screen flex items-center justify-center bg-cover bg-center"
-      style={{ backgroundImage: "url('/lovable-uploads/44cc206b-2a48-4443-8aad-6e46fe209302.png')" }}
+      style={{ 
+        backgroundImage: "url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"
+      }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-50" />
+      <div className="absolute inset-0 bg-black bg-opacity-60" />
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 font-playfair animate-fade-in" style={{ animationDelay: '0.2s' }}>
@@ -29,7 +31,7 @@ const HeroSection: React.FC = () => {
           <Button 
             variant="outline" 
             size="lg" 
-            className="bg-white/20 hover:bg-white text-white hover:text-restaurant-primary border-white"
+            className="bg-white/30 text-white hover:bg-white hover:text-restaurant-primary border-white font-medium"
             onClick={() => window.location.href = '#menu'}
           >
             Ver Menú
