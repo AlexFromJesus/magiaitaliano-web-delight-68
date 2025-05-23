@@ -24,7 +24,12 @@ const HeroSection: React.FC = () => {
           <Button 
             size="lg" 
             className="bg-restaurant-primary hover:bg-restaurant-primary/90 text-white font-medium"
-            onClick={() => window.location.href = '#reservations'}
+            onClick={() => {
+              const reservationsSection = document.getElementById('reservations');
+              if (reservationsSection) {
+                reservationsSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
           >
             Reservar una Mesa
           </Button>
@@ -32,7 +37,12 @@ const HeroSection: React.FC = () => {
             variant="outline" 
             size="lg" 
             className="bg-white/30 text-white hover:bg-white hover:text-restaurant-primary border-white font-medium"
-            onClick={() => window.location.href = '#menu'}
+            onClick={() => {
+              const menuSection = document.getElementById('menu');
+              if (menuSection) {
+                menuSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
           >
             Ver Menú
           </Button>
@@ -40,7 +50,17 @@ const HeroSection: React.FC = () => {
       </div>
       
       <div className="absolute bottom-10 left-0 right-0 flex justify-center animate-bounce">
-        <a href="#about" className="text-white">
+        <a 
+          href="#about" 
+          onClick={(e) => {
+            e.preventDefault();
+            const aboutSection = document.getElementById('about');
+            if (aboutSection) {
+              aboutSection.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}
+          className="text-white"
+        >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>

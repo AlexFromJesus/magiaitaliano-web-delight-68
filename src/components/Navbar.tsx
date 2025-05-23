@@ -31,6 +31,14 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToSection = (sectionId: string) => {
+    setIsOpen(false);
+    const section = document.getElementById(sectionId.replace('#', ''));
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header 
       className={cn(
@@ -41,7 +49,14 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0">
-            <a href="#home" className="flex items-center">
+            <a 
+              href="#home" 
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('#home');
+              }}
+              className="flex items-center"
+            >
               <span className={cn(
                 'text-2xl font-bold font-playfair tracking-tight transition-colors',
                 isScrolled ? 'text-restaurant-primary' : 'text-restaurant-light'
@@ -55,6 +70,10 @@ const Navbar: React.FC = () => {
               <a
                 key={item.name}
                 href={item.href}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection(item.href);
+                }}
                 className={cn(
                   'text-sm font-medium transition-colors hover:text-restaurant-primary relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-restaurant-primary after:transition-all hover:after:w-full',
                   isScrolled ? 'text-restaurant-dark' : 'text-restaurant-light'
@@ -65,7 +84,7 @@ const Navbar: React.FC = () => {
             ))}
             <Button 
               className="bg-restaurant-primary hover:bg-restaurant-primary/90 text-white"
-              onClick={() => window.location.href = '#reservations'}
+              onClick={() => scrollToSection('#reservations')}
             >
               Reservar Mesa
             </Button>
@@ -100,17 +119,17 @@ const Navbar: React.FC = () => {
                 key={item.name}
                 href={item.href}
                 className="block px-3 py-2 rounded-md text-base font-medium text-restaurant-dark hover:bg-restaurant-accent hover:text-restaurant-primary"
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection(item.href);
+                }}
               >
                 {item.name}
               </a>
             ))}
             <Button 
               className="w-full bg-restaurant-primary hover:bg-restaurant-primary/90 text-white mt-2"
-              onClick={() => {
-                window.location.href = '#reservations';
-                setIsOpen(false);
-              }}
+              onClick={() => scrollToSection('#reservations')}
             >
               Reservar Mesa
             </Button>

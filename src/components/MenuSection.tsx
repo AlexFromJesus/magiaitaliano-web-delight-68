@@ -5,10 +5,11 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 interface MenuItem {
   name: string;
-  description: string;
+  description?: string;
   price: string;
   image?: string;
   popular?: boolean;
+  available?: boolean;
 }
 
 interface MenuCategory {
@@ -18,7 +19,7 @@ interface MenuCategory {
 
 const menuData: MenuCategory[] = [
   {
-    name: "Antipasti",
+    name: "Entrantes",
     items: [
       {
         name: "Bruschetta",
@@ -32,114 +33,186 @@ const menuData: MenuCategory[] = [
         description: "Finas láminas de ternera cruda con rúcula, parmesano y reducción de balsámico",
         price: "€12.00",
         image: "https://images.unsplash.com/photo-1633436375173-d67ed2d23fd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-      },
+      }
+    ]
+  },
+  {
+    name: "Ensaladas",
+    items: [
       {
-        name: "Mozzarella Caprese",
+        name: "Ensalada Caprese",
         description: "Mozzarella de búfala con tomates, albahaca y glaseado balsámico",
         price: "€10.50",
         image: "https://images.unsplash.com/photo-1546039907-7fa05f864c02?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80"
       },
       {
-        name: "Arancini",
-        description: "Bolas de arroz fritas rellenas de ragú, guisantes y mozzarella",
+        name: "Ensalada Mixta",
+        description: "Selección de verduras frescas de temporada",
         price: "€9.50",
+        image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      }
+    ]
+  },
+  {
+    name: "Risotti",
+    items: [
+      {
+        name: "Risotto ai Funghi",
+        description: "Risotto con variedad de setas y queso parmesano",
+        price: "€14.50",
+        image: "https://images.unsplash.com/photo-1539586345401-51d5bfba7ac0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        popular: true
+      },
+      {
+        name: "Risotto al Frutti di Mare",
+        description: "Risotto con mariscos variados",
+        price: "€16.50",
+        image: "https://images.unsplash.com/photo-1633964913295-ceb43826e7cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      }
+    ]
+  },
+  {
+    name: "Nuestras Pastas",
+    items: [
+      {
+        name: "Tagliatelle Negros con Calabacín",
+        description: "Tomate cherry, gambas, albahaca y cáscara de limón",
+        price: "€15.90",
+        image: "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        popular: true
+      },
+      {
+        name: "Tagliatelle del Bosque",
+        description: "Con boletus y crema de trufa",
+        price: "€15.90",
+        image: "https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
+      },
+      {
+        name: "Tagliatelle a la Boloñesa",
+        description: "Tradicional salsa boloñesa casera",
+        price: "€13.90",
+        image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80"
+      },
+      {
+        name: "Gnocchi a la Sorrentina",
+        description: "Con tomate y mozzarella",
+        price: "€12.90",
+        image: "https://images.unsplash.com/photo-1621510456681-2330135e5871?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      }
+    ]
+  },
+  {
+    name: "Pastas Rellenas",
+    items: [
+      {
+        name: "Raviolis Verdes Rellenos de Ricotta y Espinacas",
+        description: "Con gambas y tomate cherry",
+        price: "€14.90",
+        image: "https://images.unsplash.com/photo-1587740908075-9e245715d5e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80",
+        popular: true
+      },
+      {
+        name: "Raviolis Verdes con Salsa 4 Quesos",
+        description: "Rellenos de ricotta y espinacas",
+        price: "€12.90",
+        image: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2068&q=80"
+      }
+    ]
+  },
+  {
+    name: "Gratinados",
+    items: [
+      {
+        name: "Lasaña de Carne",
+        description: "Lasaña tradicional con salsa boloñesa",
+        price: "€13.90",
+        image: "https://images.unsplash.com/photo-1619895092538-128f6e1d33fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        popular: true
+      },
+      {
+        name: "Berenjenas a la Parmigiana",
+        description: "Berenjenas asadas en capas con tomate y queso",
+        price: "€11.90",
+        image: "https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      },
+      {
+        name: "Lasaña Vegetal",
+        description: "Con verduras de temporada",
+        price: "€12.90",
         image: "https://images.unsplash.com/photo-1633436375173-d67ed2d23fd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       }
     ]
   },
   {
-    name: "Pasta",
+    name: "Hamburguesas",
     items: [
       {
-        name: "Spaghetti alla Carbonara",
-        description: "Espaguetis con panceta, huevos, queso pecorino y pimienta negra",
-        price: "€14.50",
-        image: "https://images.unsplash.com/photo-1612874742237-6526221588e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
-        popular: true
+        name: "Hamburguesa con Lechuga Morada",
+        description: "Con mozzarella, salsa de queso, tomate, huevo y bacon",
+        price: "No disponible",
+        image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2099&q=80",
+        available: false
       },
       {
-        name: "Linguine al Frutti di Mare",
-        description: "Linguine con mariscos variados en una ligera salsa de tomate",
-        price: "€18.00",
-        image: "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-      },
-      {
-        name: "Pappardelle al Ragù di Cinghiale",
-        description: "Cintas anchas de pasta con ragú de jabalí y parmesano",
-        price: "€16.50",
-        image: "https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
-      },
-      {
-        name: "Ravioli di Spinaci e Ricotta",
-        description: "Raviolis caseros rellenos de espinacas y ricotta en salsa de mantequilla y salvia",
-        price: "€15.00",
-        image: "https://images.unsplash.com/photo-1587740908075-9e245715d5e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80",
-        popular: true
+        name: "Hamburguesa con Rúcula",
+        description: "Con tomate, salsa mangiaitaliano, jamón serrano, balsámico y escalla de parmesano",
+        price: "No disponible",
+        image: "https://images.unsplash.com/photo-1565299507177-b0ac66763828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2022&q=80",
+        available: false
       }
     ]
   },
   {
-    name: "Pizze",
+    name: "Carnes",
     items: [
       {
-        name: "Margherita",
-        description: "Salsa de tomate, mozzarella y albahaca fresca",
-        price: "€12.00",
+        name: "Solomillo Mangiaitaliano",
+        description: "Con Rúcula, Parmigiano Reggiano y Tomate Cherry",
+        price: "No disponible",
+        image: "https://images.unsplash.com/photo-1626509653291-20ca7b31d7e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        available: false
+      },
+      {
+        name: "Solomillo a la Plancha",
+        description: "Con Papas Fritas",
+        price: "No disponible",
+        image: "https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        available: false
+      }
+    ]
+  },
+  {
+    name: "Pizzas",
+    items: [
+      {
+        name: "Pizza Mangiaitaliano",
+        description: "Con jamón de parma, rúcula, tomate cherry y parmigiano reggiano",
+        price: "€12.90",
         image: "https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
         popular: true
       },
       {
-        name: "Quattro Formaggi",
-        description: "Mozzarella, gorgonzola, fontina y parmesano",
-        price: "€14.50",
+        name: "Pizza Focaccia Mangiaitaliano",
+        description: "Tomate cherry, rúcula y parmigiano reggiano",
+        price: "€9.50",
+        image: "https://images.unsplash.com/photo-1571066811602-716837d681de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1644&q=80"
+      },
+      {
+        name: "Pizza 4 Formaggi",
+        description: "4 quesos gorgonzola, mozzarella, parmigiano reggiano",
+        price: "€10.90",
         image: "https://images.unsplash.com/photo-1565564194296-14db6e0bf8a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
       },
       {
-        name: "Diavola",
-        description: "Salsa de tomate, mozzarella, salami picante y hojuelas de chile",
-        price: "€13.50",
+        name: "Pizza Diavola Salame Picante",
+        description: "Picante",
+        price: "€12.90",
         image: "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
-      },
-      {
-        name: "Prosciutto e Funghi",
-        description: "Salsa de tomate, mozzarella, jamón y champiñones",
-        price: "€14.00",
-        image: "https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
       }
     ]
   },
   {
-    name: "Secondi",
-    items: [
-      {
-        name: "Ossobuco alla Milanese",
-        description: "Osobuco de ternera estofado con verduras, vino blanco y caldo, servido con risotto de azafrán",
-        price: "€22.00",
-        image: "https://images.unsplash.com/photo-1626509653291-20ca7b31d7e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-      },
-      {
-        name: "Branzino al Forno",
-        description: "Lubina al horno con hierbas, limón y patatas asadas",
-        price: "€24.50",
-        image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-        popular: true
-      },
-      {
-        name: "Saltimbocca alla Romana",
-        description: "Filetes de ternera con prosciutto y salvia, salteados en vino blanco",
-        price: "€20.00",
-        image: "https://images.unsplash.com/photo-1598514983318-2f64f8f4796c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-      },
-      {
-        name: "Pollo al Marsala",
-        description: "Pechuga de pollo salteada con champiñones en salsa de vino Marsala",
-        price: "€18.50",
-        image: "https://images.unsplash.com/photo-1651966753749-4cfa606a2d5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
-      }
-    ]
-  },
-  {
-    name: "Dolci",
+    name: "Postres",
     items: [
       {
         name: "Tiramisu",
@@ -201,21 +274,21 @@ const MenuSection: React.FC = () => {
     <section id="menu" className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8" ref={sectionRef}>
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-restaurant-dark mb-4 font-playfair">Nuestro Menú</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-restaurant-dark mb-4 font-playfair">Nuestra Carta</h2>
           <div className="w-20 h-1 bg-restaurant-primary mx-auto mb-6"></div>
           <p className="text-restaurant-dark max-w-2xl mx-auto">
-            Descubre nuestra selección de auténticos platos italianos, hechos con amor y los mejores ingredientes.
+            Descubre nuestra selección de auténticos platos italianos, elaborados con los mejores ingredientes frescos.
           </p>
         </div>
         
-        <Tabs defaultValue="Antipasti" className="w-full">
-          <div className="flex justify-center mb-8">
-            <TabsList className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2">
+        <Tabs defaultValue={menuData[0].name} className="w-full">
+          <div className="flex justify-center mb-8 overflow-x-auto pb-2">
+            <TabsList className="grid grid-flow-col auto-cols-max gap-2">
               {menuData.map((category) => (
                 <TabsTrigger 
                   key={category.name} 
                   value={category.name}
-                  className="font-playfair"
+                  className="font-playfair whitespace-nowrap"
                 >
                   {category.name}
                 </TabsTrigger>
@@ -232,7 +305,8 @@ const MenuSection: React.FC = () => {
                     className={cn(
                       "flex flex-col md:flex-row gap-6 p-6 rounded-lg transition-all",
                       showAnimation && "animate-fade-in",
-                      item.popular ? "bg-restaurant-accent/20 border border-restaurant-primary/20" : "bg-white hover:bg-restaurant-accent/10"
+                      item.popular ? "bg-restaurant-accent/20 border border-restaurant-primary/20" : "bg-white hover:bg-restaurant-accent/10",
+                      !item.available && "opacity-70"
                     )}
                     style={{ animationDelay: `${0.2 * index}s` }}
                   >
@@ -252,10 +326,15 @@ const MenuSection: React.FC = () => {
                           {item.popular && (
                             <span className="ml-2 inline-block bg-restaurant-primary text-white text-xs px-2 py-1 rounded-full">Elección del Chef</span>
                           )}
+                          {item.available === false && (
+                            <span className="ml-2 inline-block bg-gray-500 text-white text-xs px-2 py-1 rounded-full">No disponible</span>
+                          )}
                         </h4>
                         <span className="text-lg font-semibold text-restaurant-primary">{item.price}</span>
                       </div>
-                      <p className="text-restaurant-dark/80 text-sm">{item.description}</p>
+                      {item.description && (
+                        <p className="text-restaurant-dark/80 text-sm">{item.description}</p>
+                      )}
                     </div>
                   </div>
                 ))}
