@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
 
@@ -43,13 +42,19 @@ const AboutSection: React.FC = () => {
           >
             <h3 className="text-2xl font-semibold text-restaurant-primary mb-6 font-playfair">Un Sabor de Italia en Las Palmas</h3>
             <p className="text-restaurant-dark mb-6 leading-relaxed">
-              Bienvenido a Mangiaitaliano, donde la pasión por la auténtica cocina italiana se encuentra con el ambiente vibrante de Las Palmas de Gran Canaria. Nuestro viaje comenzó en 2010 cuando el Chef Marco Rossi decidió traer las apreciadas recetas de su abuela italiana a las hermosas Islas Canarias.
+              En Mangiaitaliano, ubicado en el corazón de Las Palmas de Gran Canaria, nos dedicamos a traer los sabores auténticos de Italia a nuestra comunidad. Nuestro menú presenta una amplia variedad de cocinas regionales italianas, con especialidades de Nápoles, Roma, Toscana y Sicilia.
             </p>
             <p className="text-restaurant-dark mb-6 leading-relaxed">
-              Lo que comenzó como un pequeño restaurante familiar se ha convertido en un destino culinario donde tanto los locales como los turistas vienen a experimentar los verdaderos sabores de Italia, preparados con amor y los mejores ingredientes.
+              Nos enorgullece ofrecer una variedad de platos aptos para vegetarianos y veganos, asegurando que cada comensal encuentre algo que le encante.
+            </p>
+            <p className="text-restaurant-dark mb-6 leading-relaxed">
+              Nuestro ambiente acogedor y familiar, junto con un servicio atento, crean el entorno perfecto para disfrutar de una comida en buena compañía.
+            </p>
+            <p className="text-restaurant-dark mb-6 leading-relaxed">
+              Ya sea que tengas antojo de una clásica spaghetti alla carbonara, una pizza al horno de leña o un reconfortante plato de gnocchi alla sorrentina, encontrarás sabores que te transportarán directamente a Italia.
             </p>
             <p className="text-restaurant-dark leading-relaxed">
-              Cada plato cuenta una historia de tradición, pasión y el rico patrimonio culinario de Italia. Desde nuestra pasta casera hasta nuestras pizzas hechas en horno de leña, cada bocado es un viaje a través de las diversas regiones de Italia.
+              Únete a nosotros en Mangiaitaliano, donde cada plato es una celebración de la tradición culinaria italiana.
             </p>
           </div>
           
