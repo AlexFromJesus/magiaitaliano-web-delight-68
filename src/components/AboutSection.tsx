@@ -73,7 +73,7 @@ const AboutSection: React.FC = () => {
             </div>
             <div className="absolute -bottom-8 -left-8 w-2/3 h-40">
               <div className="w-full h-full bg-restaurant-primary rounded-lg p-6 text-white">
-                <p className="font-playfair italic text-lg">"En nuestra cocina, no solo cocinamos comida. Creamos recuerdos."</p>
+                <p className="font-playfair italic text-lg">"Cada plato cuenta una historia. La nuestra es la de tradición, sabor y hospitalidad italiana."</p>
                 <p className="mt-2 text-sm">— Chef Marco Rossi</p>
               </div>
             </div>
