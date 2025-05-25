@@ -24,14 +24,14 @@ const menuData: MenuCategory[] = [
         name: "Bruschetta",
         description: "Pan tostado con tomates frescos, ajo, albahaca y aceite de oliva virgen extra",
         price: "€8.50",
-        image: "/lovable-uploads/96ab9dfb-7d56-41b2-b445-a948adcbd0ee.png",
+        image: "https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
         popular: true
       },
       {
         name: "Carpaccio di Manzo",
         description: "Finas láminas de ternera cruda con rúcula, parmesano y reducción de balsámico",
         price: "€12.00",
-        image: "/lovable-uploads/96ab9dfb-7d56-41b2-b445-a948adcbd0ee.png"
+        image: "https://images.unsplash.com/photo-1625938145312-31544134479a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       }
     ]
   },
