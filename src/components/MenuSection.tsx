@@ -66,7 +66,7 @@ const menuData: MenuCategory[] = [
         name: "Risotto al Frutti di Mare",
         description: "Risotto con mariscos variados",
         price: "€16.50",
-        image: "/lovable-uploads/04eccf24-3f5f-4664-b072-3ca815a6df41.png"
+        image: "https://images.unsplash.com/photo-1563379091339-03246963d7d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
       }
     ]
   },
@@ -125,7 +125,7 @@ const menuData: MenuCategory[] = [
         name: "Lasaña de Carne",
         description: "Lasaña tradicional con salsa boloñesa",
         price: "€13.90",
-        image: "/lovable-uploads/62d9b7e1-367b-4d77-a796-17a3e3e5342e.png",
+        image: "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
         popular: true
       },
       {
