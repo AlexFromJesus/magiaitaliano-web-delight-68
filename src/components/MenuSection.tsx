@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -19,7 +18,7 @@ interface MenuCategory {
 
 const menuData: MenuCategory[] = [
   {
-    name: "Entrantes",
+    name: "Entrantes & Ensaladas",
     image: "https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     items: [
       {
@@ -63,13 +62,7 @@ const menuData: MenuCategory[] = [
       {
         name: "Salumi misti",
         price: "15,90€"
-      }
-    ]
-  },
-  {
-    name: "Ensaladas",
-    image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    items: [
+      },
       {
         name: "Ensalada Cesar con pollo, lechuga, crutones, queso",
         price: "10,90€"
@@ -94,7 +87,7 @@ const menuData: MenuCategory[] = [
     ]
   },
   {
-    name: "Nuestra Pasta",
+    name: "Pasta & Risotti",
     image: "https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     items: [
       {
@@ -135,13 +128,7 @@ const menuData: MenuCategory[] = [
       {
         name: "Pasta fresca del día",
         price: "11,90€"
-      }
-    ]
-  },
-  {
-    name: "Risotti",
-    image: "https://images.unsplash.com/photo-1476124369491-e7addf5db371?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    items: [
+      },
       {
         name: "Risotto de boletus, trufas, queso",
         price: "16,90€",
@@ -150,22 +137,7 @@ const menuData: MenuCategory[] = [
     ]
   },
   {
-    name: "Nuestros Gratinados",
-    image: "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    items: [
-      {
-        name: "Lasagne con carne",
-        price: "13,90€",
-        popular: true
-      },
-      {
-        name: "Panna y jamón",
-        price: "13,90€"
-      }
-    ]
-  },
-  {
-    name: "Nuestra Carne",
+    name: "Carnes & Hamburguesas",
     image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     items: [
       {
@@ -180,13 +152,16 @@ const menuData: MenuCategory[] = [
       {
         name: "Solomillo a la parmigiana",
         price: "22,90€"
-      }
-    ]
-  },
-  {
-    name: "Nuestras Hamburguesas",
-    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    items: [
+      },
+      {
+        name: "Lasagne con carne",
+        price: "13,90€",
+        popular: true
+      },
+      {
+        name: "Panna y jamón",
+        price: "13,90€"
+      },
       {
         name: "Hamburguesa",
         price: "14,90€"
@@ -198,7 +173,7 @@ const menuData: MenuCategory[] = [
     ]
   },
   {
-    name: "Nuestros Postres",
+    name: "Postres",
     image: "https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     items: [
       {
@@ -225,7 +200,7 @@ const menuData: MenuCategory[] = [
     ]
   },
   {
-    name: "Vinos Blancos",
+    name: "Vinos Blancos & Espumosos",
     image: "https://images.unsplash.com/photo-1566049107657-c8bd7cd95667?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     items: [
       {
@@ -262,13 +237,7 @@ const menuData: MenuCategory[] = [
         name: "Pecorino DOC Vola Volè",
         description: "75cl",
         price: "19,90€"
-      }
-    ]
-  },
-  {
-    name: "Vinos Espumosos",
-    image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    items: [
+      },
       {
         name: "Gheller Extra Dry Prosecco Superiore",
         description: "75cl",
@@ -382,13 +351,13 @@ const MenuSection: React.FC = () => {
         </div>
         
         <Tabs defaultValue={menuData[0].name} className="w-full">
-          <div className="flex justify-center mb-12 overflow-x-auto pb-2">
-            <TabsList className="grid grid-flow-col auto-cols-max gap-2 bg-white/80 backdrop-blur-sm shadow-lg rounded-full p-2">
+          <div className="flex justify-center mb-12">
+            <TabsList className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 bg-white/80 backdrop-blur-sm shadow-lg rounded-2xl p-2 w-full max-w-6xl">
               {menuData.map((category) => (
                 <TabsTrigger 
                   key={category.name} 
                   value={category.name}
-                  className="font-playfair whitespace-nowrap data-[state=active]:bg-restaurant-primary data-[state=active]:text-white rounded-full px-6 py-3 transition-all duration-300 hover:bg-restaurant-primary/10"
+                  className="font-playfair text-center data-[state=active]:bg-restaurant-primary data-[state=active]:text-white rounded-xl px-4 py-3 transition-all duration-300 hover:bg-restaurant-primary/10 text-sm"
                 >
                   {category.name}
                 </TabsTrigger>
