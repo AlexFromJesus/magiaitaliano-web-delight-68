@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from 'react';
 import { cn } from '@/lib/utils';
 
@@ -65,8 +66,8 @@ const AboutSection: React.FC = () => {
           >
             <div className="absolute inset-0 rounded-lg overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80" 
-                alt="Chef preparando plato italiano" 
+                src="/lovable-uploads/7cd5b878-29f5-484b-89c1-8c9d4a1def97.png" 
+                alt="Exterior del restaurante Mangiaitaliano" 
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
