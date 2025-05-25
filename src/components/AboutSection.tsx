@@ -66,16 +66,10 @@ const AboutSection: React.FC = () => {
           >
             <div className="absolute inset-0 rounded-lg overflow-hidden">
               <img 
-                src="/lovable-uploads/7cd5b878-29f5-484b-89c1-8c9d4a1def97.png" 
+                src="/lovable-uploads/94a19ffc-1deb-490d-9769-3de75d4e4e7f.png" 
                 alt="Exterior del restaurante Mangiaitaliano" 
                 className="w-full h-full object-cover rounded-lg"
               />
-            </div>
-            <div className="absolute -bottom-8 -left-8 w-2/3 h-40">
-              <div className="w-full h-full bg-restaurant-primary rounded-lg p-6 text-white">
-                <p className="font-playfair italic text-lg">"Cada plato cuenta una historia. La nuestra es la de tradición, sabor y hospitalidad italiana."</p>
-                <p className="mt-2 text-sm">— Chef Marco Rossi</p>
-              </div>
             </div>
           </div>
         </div>
@@ -106,7 +100,7 @@ const AboutSection: React.FC = () => {
               </svg>
             </div>
             <h4 className="text-xl font-semibold text-restaurant-dark mb-4 font-playfair">Recetas Tradicionales</h4>
-            <p className="text-restaurant-dark">Nuestros platos se preparan siguiendo recetas italianas tradicionales, algunas transmitidas a través de generaciones de la familia Rossi.</p>
+            <p className="text-restaurant-dark">Nuestros platos se preparan siguiendo recetas italianas tradicionales, algunas transmitidas a través de generaciones de familias italianas.</p>
           </div>
           
           <div 
