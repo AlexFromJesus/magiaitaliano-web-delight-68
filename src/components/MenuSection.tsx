@@ -202,7 +202,7 @@ const menuData: MenuCategory[] = [
   },
   {
     name: "Vinos Blancos & Espumosos",
-    image: "https://images.unsplash.com/photo-1437418747212-8d9709afab22?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    image: "https://images.unsplash.com/photo-1558346648-9757f2fa4474?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     items: [
       {
         name: "Gewürztraminer Alto Adige DOC",
@@ -253,7 +253,7 @@ const menuData: MenuCategory[] = [
   },
   {
     name: "Vinos Tintos",
-    image: "https://images.unsplash.com/photo-1586370434639-0fe43b2d32d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    image: "https://images.unsplash.com/photo-1608893175263-42c2fc28e3b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     items: [
       {
         name: "Brunello di Montalcino Mastrojanni",
@@ -353,12 +353,12 @@ const MenuSection: React.FC = () => {
         
         <Tabs defaultValue={menuData[0].name} className="w-full">
           <div className="flex justify-center mb-12 overflow-x-auto">
-            <TabsList className="grid grid-cols-3 lg:grid-cols-6 gap-2 bg-white/80 backdrop-blur-sm shadow-lg rounded-2xl p-4 min-w-max w-full max-w-7xl">
+            <TabsList className="grid grid-cols-3 lg:grid-cols-6 gap-2 bg-white/80 backdrop-blur-sm shadow-lg rounded-2xl p-3 min-w-max w-full max-w-7xl">
               {menuData.map((category) => (
                 <TabsTrigger 
                   key={category.name} 
                   value={category.name}
-                  className="font-playfair text-center data-[state=active]:bg-restaurant-primary data-[state=active]:text-white rounded-xl px-4 py-4 transition-all duration-300 hover:bg-restaurant-primary/10 text-sm whitespace-nowrap min-w-max"
+                  className="font-playfair text-center data-[state=active]:bg-restaurant-primary data-[state=active]:text-white rounded-xl px-4 py-2 transition-all duration-300 hover:bg-restaurant-primary/10 text-sm whitespace-nowrap min-w-max"
                 >
                   {category.name}
                 </TabsTrigger>
