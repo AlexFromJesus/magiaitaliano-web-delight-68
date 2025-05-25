@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -23,7 +24,8 @@ const menuData: MenuCategory[] = [
     items: [
       {
         name: "Carpaccio di bue su letto di rucola",
-        price: "13,90€"
+        price: "13,90€",
+        popular: true
       },
       {
         name: "Coppetta suppli de arroz a la boloñesa",
@@ -88,7 +90,7 @@ const menuData: MenuCategory[] = [
   },
   {
     name: "Pasta & Risotti",
-    image: "https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    image: "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     items: [
       {
         name: "Lasagne",
@@ -201,7 +203,7 @@ const menuData: MenuCategory[] = [
   },
   {
     name: "Vinos Blancos & Espumosos",
-    image: "https://images.unsplash.com/photo-1566049107657-c8bd7cd95667?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    image: "https://images.unsplash.com/photo-1558346648-9757f2fa4474?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     items: [
       {
         name: "Gewürztraminer Alto Adige DOC",
@@ -252,7 +254,7 @@ const menuData: MenuCategory[] = [
   },
   {
     name: "Vinos Tintos",
-    image: "https://images.unsplash.com/photo-1606280635882-8b1a6fa054df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    image: "https://images.unsplash.com/photo-1608893175263-42c2fc28e3b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     items: [
       {
         name: "Brunello di Montalcino Mastrojanni",
@@ -351,13 +353,13 @@ const MenuSection: React.FC = () => {
         </div>
         
         <Tabs defaultValue={menuData[0].name} className="w-full">
-          <div className="flex justify-center mb-12">
-            <TabsList className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 bg-white/80 backdrop-blur-sm shadow-lg rounded-2xl p-2 w-full max-w-6xl">
+          <div className="flex justify-center mb-12 overflow-x-auto">
+            <TabsList className="grid grid-cols-3 lg:grid-cols-6 gap-2 bg-white/80 backdrop-blur-sm shadow-lg rounded-2xl p-2 min-w-max w-full max-w-7xl">
               {menuData.map((category) => (
                 <TabsTrigger 
                   key={category.name} 
                   value={category.name}
-                  className="font-playfair text-center data-[state=active]:bg-restaurant-primary data-[state=active]:text-white rounded-xl px-4 py-3 transition-all duration-300 hover:bg-restaurant-primary/10 text-sm"
+                  className="font-playfair text-center data-[state=active]:bg-restaurant-primary data-[state=active]:text-white rounded-xl px-4 py-3 transition-all duration-300 hover:bg-restaurant-primary/10 text-sm whitespace-nowrap min-w-max"
                 >
                   {category.name}
                 </TabsTrigger>
