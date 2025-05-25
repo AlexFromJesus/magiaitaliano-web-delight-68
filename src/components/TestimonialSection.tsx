@@ -19,7 +19,7 @@ const testimonials: Testimonial[] = [
     name: "Mark K.",
     role: "Restaurant Reviewer",
     quote: "Great little italian restaurant in the centre of Las Palmas. Great pasta, al dente, great caprese. Tiramisu is fantastic! I would recommend this restaurant.",
-    image: "/lovable-uploads/d2105c15-3fc0-4f37-94ef-7ec977780c78.png",
+    image: "/lovable-uploads/2c02d24c-f3a8-4f0b-a634-8807b40dbd96.png",
     rating: 5
   },
   {
@@ -27,7 +27,7 @@ const testimonials: Testimonial[] = [
     name: "Katie Lomuto",
     role: "Food Enthusiast",
     quote: "Unexpectedly authentic Italian restaurant in Las Palmas. The Caesar dressing was made with fresh anchovies, the homemade pasta was delicious- we ordered the black tagliatelle and the vegetable lasagna- and the staff was very friendly and helpful. We very much enjoyed our dinner at this spot!",
-    image: "/lovable-uploads/17782f3e-abaf-4676-b303-11958a796f29.png",
+    image: "/lovable-uploads/d2105c15-3fc0-4f37-94ef-7ec977780c78.png",
     rating: 5
   },
   {
@@ -35,7 +35,7 @@ const testimonials: Testimonial[] = [
     name: "Diana Nastas",
     role: "Guest",
     quote: "Delicious food, and very respectful staff who treated us at the highest level! A very warm attitude, that we really appreciated! And please try the desert of mascarpone with mango cream! Still dreaming of coming back!",
-    image: "/lovable-uploads/2c02d24c-f3a8-4f0b-a634-8807b40dbd96.png",
+    image: "/lovable-uploads/17782f3e-abaf-4676-b303-11958a796f29.png",
     rating: 5
   }
 ];
