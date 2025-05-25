@@ -16,35 +16,27 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Maria Rodriguez",
-    role: "Food Critic",
-    quote: "Magiaitaliano offers an authentic taste of Italy right here in Las Palmas. Every dish I've tried has transported me straight to the heart of Italy. Their homemade pasta is simply divine!",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80",
+    name: "Mark K.",
+    role: "Restaurant Reviewer",
+    quote: "Great little italian restaurant in the centre of Las Palmas. Great pasta, al dente, great caprese. Tiramisu is fantastic! I would recommend this restaurant.",
+    image: "/lovable-uploads/d2105c15-3fc0-4f37-94ef-7ec977780c78.png",
     rating: 5
   },
   {
     id: 2,
-    name: "Carlos Mendoza",
-    role: "Local Foodie",
-    quote: "I've been coming to Magiaitaliano for years, and the quality and service have never wavered. The restaurant ambience is perfect for both casual dining and special occasions.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80",
+    name: "Katie Lomuto",
+    role: "Food Enthusiast",
+    quote: "Unexpectedly authentic Italian restaurant in Las Palmas. The Caesar dressing was made with fresh anchovies, the homemade pasta was delicious- we ordered the black tagliatelle and the vegetable lasagna- and the staff was very friendly and helpful. We very much enjoyed our dinner at this spot!",
+    image: "/lovable-uploads/17782f3e-abaf-4676-b303-11958a796f29.png",
     rating: 5
   },
   {
     id: 3,
-    name: "Sophie Laurent",
-    role: "Tourist",
-    quote: "During our vacation in Las Palmas, we stumbled upon this gem of a restaurant. The pasta carbonara was the best I've ever had, and the staff made us feel like family!",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80",
+    name: "Diana Nastas",
+    role: "Guest",
+    quote: "Delicious food, and very respectful staff who treated us at the highest level! A very warm attitude, that we really appreciated! And please try the desert of mascarpone with mango cream! Still dreaming of coming back!",
+    image: "/lovable-uploads/2c02d24c-f3a8-4f0b-a634-8807b40dbd96.png",
     rating: 5
-  },
-  {
-    id: 4,
-    name: "Antonio Fernandez",
-    role: "Business Owner",
-    quote: "Magiaitaliano is my go-to place for business lunches and dinners. The professional service and exceptional food quality make it the perfect venue to impress clients.",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80",
-    rating: 4
   }
 ];
 
