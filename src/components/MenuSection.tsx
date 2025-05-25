@@ -202,7 +202,7 @@ const menuData: MenuCategory[] = [
   },
   {
     name: "Vinos Blancos & Espumosos",
-    image: "https://images.unsplash.com/photo-1558346648-9757f2fa4474?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     items: [
       {
         name: "Gewürztraminer Alto Adige DOC",
@@ -253,7 +253,7 @@ const menuData: MenuCategory[] = [
   },
   {
     name: "Vinos Tintos",
-    image: "https://images.unsplash.com/photo-1608893175263-42c2fc28e3b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    image: "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     items: [
       {
         name: "Brunello di Montalcino Mastrojanni",
