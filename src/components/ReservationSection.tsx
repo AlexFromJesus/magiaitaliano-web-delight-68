@@ -1,72 +1,11 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
-import { 
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { Calendar } from "@/components/ui/calendar";
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
-import { format } from "date-fns";
-import { CalendarIcon } from 'lucide-react';
-import { cn } from '@/lib/utils';
-import { useToast } from '@/hooks/use-toast';
-
-const generateTimeSlots = () => {
-  const slots = [];
-  for (let hour = 12; hour <= 22; hour++) {
-    slots.push(`${hour}:00`);
-    if (hour !== 22) {
-      slots.push(`${hour}:30`);
-    }
-  }
-  return slots;
-};
-
-const timeSlots = generateTimeSlots();
+import { Phone, Clock, Users, MapPin } from 'lucide-react';
 
 const ReservationSection: React.FC = () => {
-  const [date, setDate] = useState<Date | undefined>(undefined);
-  const [time, setTime] = useState<string>("");
-  const [guests, setGuests] = useState<string>("2");
-  const [name, setName] = useState<string>("");
-  const [email, setEmail] = useState<string>("");
-  const [phone, setPhone] = useState<string>("");
-  const [specialRequests, setSpecialRequests] = useState<string>("");
-  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
-  const { toast } = useToast();
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate API call
-    setTimeout(() => {
-      toast({
-        title: "Reservation Request Submitted",
-        description: "We'll confirm your reservation shortly. Thank you!",
-      });
-      
-      // Reset form
-      setDate(undefined);
-      setTime("");
-      setGuests("2");
-      setName("");
-      setEmail("");
-      setPhone("");
-      setSpecialRequests("");
-      setIsSubmitting(false);
-    }, 1500);
-  };
-
   return (
-    <section id="reservations" className="py-20 bg-white relative">
+    <section id="reservations" className="py-20 bg-restaurant-accent/5 relative">
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-10"
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80')" }}
@@ -74,141 +13,82 @@ const ReservationSection: React.FC = () => {
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-restaurant-dark mb-4 font-playfair">Make a Reservation</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-restaurant-dark mb-4 font-playfair">Reserva Tu Mesa</h2>
           <div className="w-20 h-1 bg-restaurant-primary mx-auto mb-6"></div>
           <p className="text-restaurant-dark max-w-2xl mx-auto">
-            Reserve your table at Magiaitaliano for an unforgettable dining experience. For large groups or special events, please call us directly.
+            Llámanos para reservar tu mesa en Mangiaitaliano y disfruta de una experiencia gastronómica auténticamente italiana.
           </p>
         </div>
         
-        <div className="max-w-3xl mx-auto">
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <Label htmlFor="date">Date</Label>
-                  <Popover>
-                    <PopoverTrigger asChild>
-                      <Button
-                        id="date"
-                        variant="outline"
-                        className={cn(
-                          "w-full justify-start text-left font-normal",
-                          !date && "text-muted-foreground"
-                        )}
-                      >
-                        <CalendarIcon className="mr-2 h-4 w-4" />
-                        {date ? format(date, "PPP") : "Select date"}
-                      </Button>
-                    </PopoverTrigger>
-                    <PopoverContent className="w-auto p-0" align="start">
-                      <Calendar
-                        mode="single"
-                        selected={date}
-                        onSelect={setDate}
-                        disabled={(date) => date < new Date()}
-                        initialFocus
-                      />
-                    </PopoverContent>
-                  </Popover>
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white rounded-lg shadow-lg p-8 md:p-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+              <div className="space-y-6">
+                <div className="flex items-center">
+                  <Phone className="h-6 w-6 text-restaurant-primary mr-4" />
+                  <div>
+                    <h3 className="font-semibold text-restaurant-dark">Teléfono de Reservas</h3>
+                    <p className="text-restaurant-dark/70">828 90 38 19</p>
+                  </div>
                 </div>
                 
-                <div className="space-y-2">
-                  <Label htmlFor="time">Time</Label>
-                  <Select value={time} onValueChange={setTime}>
-                    <SelectTrigger className="w-full">
-                      <SelectValue placeholder="Select time" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {timeSlots.map((slot) => (
-                        <SelectItem key={slot} value={slot}>{slot}</SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
+                <div className="flex items-center">
+                  <Clock className="h-6 w-6 text-restaurant-primary mr-4" />
+                  <div>
+                    <h3 className="font-semibold text-restaurant-dark">Horario de Atención</h3>
+                    <p className="text-restaurant-dark/70">Lunes - Domingo: 12:00 - 23:00</p>
+                  </div>
                 </div>
                 
-                <div className="space-y-2">
-                  <Label htmlFor="guests">Number of Guests</Label>
-                  <Select value={guests} onValueChange={setGuests}>
-                    <SelectTrigger className="w-full">
-                      <SelectValue placeholder="Select number of guests" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
-                        <SelectItem key={num} value={num.toString()}>{num} {num === 1 ? 'Guest' : 'Guests'}</SelectItem>
-                      ))}
-                      <SelectItem value="9+">9+ Guests (Please call)</SelectItem>
-                    </SelectContent>
-                  </Select>
+                <div className="flex items-center">
+                  <Users className="h-6 w-6 text-restaurant-primary mr-4" />
+                  <div>
+                    <h3 className="font-semibold text-restaurant-dark">Grupos Grandes</h3>
+                    <p className="text-restaurant-dark/70">Para grupos de 8+ personas, por favor llama con anticipación</p>
+                  </div>
                 </div>
                 
-                <div className="space-y-2">
-                  <Label htmlFor="name">Full Name</Label>
-                  <Input 
-                    id="name" 
-                    value={name} 
-                    onChange={(e) => setName(e.target.value)} 
-                    placeholder="Your full name" 
-                    required 
-                  />
-                </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
-                  <Input 
-                    id="email" 
-                    type="email" 
-                    value={email} 
-                    onChange={(e) => setEmail(e.target.value)} 
-                    placeholder="Your email address" 
-                    required 
-                  />
-                </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="phone">Phone</Label>
-                  <Input 
-                    id="phone" 
-                    value={phone} 
-                    onChange={(e) => setPhone(e.target.value)} 
-                    placeholder="Your phone number" 
-                    required 
-                  />
-                </div>
-                
-                <div className="space-y-2 md:col-span-2">
-                  <Label htmlFor="specialRequests">Special Requests (Optional)</Label>
-                  <Textarea 
-                    id="specialRequests" 
-                    value={specialRequests} 
-                    onChange={(e) => setSpecialRequests(e.target.value)} 
-                    placeholder="Any dietary restrictions or special occasions?" 
-                    rows={3} 
-                  />
+                <div className="flex items-center">
+                  <MapPin className="h-6 w-6 text-restaurant-primary mr-4" />
+                  <div>
+                    <h3 className="font-semibold text-restaurant-dark">Ubicación</h3>
+                    <p className="text-restaurant-dark/70">C. León y Castillo, 26, Las Palmas</p>
+                  </div>
                 </div>
               </div>
               
-              <div className="text-center">
-                <Button 
-                  type="submit" 
-                  className="bg-restaurant-primary hover:bg-restaurant-primary/90 text-white px-8 py-2"
-                  disabled={!date || !time || !name || !email || !phone || isSubmitting}
-                >
-                  {isSubmitting ? "Processing..." : "Book My Table"}
-                </Button>
-                
-                <p className="text-sm text-restaurant-dark/70 mt-4">
-                  By making a reservation, you agree to our reservation policy. We hold tables for 15 minutes past reservation time.
+              <div className="flex flex-col justify-center items-center text-center space-y-6">
+                <h3 className="text-2xl font-semibold text-restaurant-dark font-playfair">
+                  ¡Reserva Ahora!
+                </h3>
+                <p className="text-restaurant-dark/70">
+                  Nuestro equipo estará encantado de atenderte y asegurar que tengas la mejor mesa disponible.
                 </p>
+                <a 
+                  href="tel:+34828903819"
+                  className="inline-flex items-center justify-center bg-restaurant-primary hover:bg-restaurant-primary/90 text-white px-8 py-4 rounded-lg transition-colors font-medium text-lg"
+                >
+                  <Phone className="mr-2 h-5 w-5" />
+                  Llamar: 828 90 38 19
+                </a>
+                <a 
+                  href="mailto:mangiaitalianogc@gmail.com"
+                  className="inline-flex items-center justify-center border border-restaurant-primary text-restaurant-primary hover:bg-restaurant-primary hover:text-white px-8 py-3 rounded-lg transition-colors font-medium"
+                >
+                  Enviar Email
+                </a>
               </div>
-            </form>
-          </div>
-          
-          <div className="mt-10 text-center">
-            <p className="text-restaurant-dark font-medium mb-2">Need to modify or cancel a reservation?</p>
-            <p className="text-restaurant-dark/70">
-              Please call us at <a href="tel:+34928123456" className="text-restaurant-primary hover:underline">+34 928 123 456</a>
-            </p>
+            </div>
+            
+            <div className="border-t border-restaurant-accent/20 pt-6">
+              <h4 className="font-semibold text-restaurant-dark mb-3">Política de Reservas:</h4>
+              <ul className="text-sm text-restaurant-dark/70 space-y-2">
+                <li>• Mantenemos las mesas reservadas durante 15 minutos después de la hora programada</li>
+                <li>• Para cancelaciones, por favor llama con al menos 2 horas de anticipación</li>
+                <li>• Grupos de más de 8 personas requieren confirmación especial</li>
+                <li>• Recomendamos reservar con anticipación, especialmente los fines de semana</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

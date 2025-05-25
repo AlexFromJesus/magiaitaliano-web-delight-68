@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from 'react';
 import { cn } from '@/lib/utils';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -25,14 +24,14 @@ const menuData: MenuCategory[] = [
         name: "Bruschetta",
         description: "Pan tostado con tomates frescos, ajo, albahaca y aceite de oliva virgen extra",
         price: "€8.50",
-        image: "https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+        image: "/lovable-uploads/96ab9dfb-7d56-41b2-b445-a948adcbd0ee.png",
         popular: true
       },
       {
         name: "Carpaccio di Manzo",
         description: "Finas láminas de ternera cruda con rúcula, parmesano y reducción de balsámico",
         price: "€12.00",
-        image: "https://images.unsplash.com/photo-1633436375173-d67ed2d23fd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+        image: "/lovable-uploads/96ab9dfb-7d56-41b2-b445-a948adcbd0ee.png"
       }
     ]
   },
@@ -67,7 +66,7 @@ const menuData: MenuCategory[] = [
         name: "Risotto al Frutti di Mare",
         description: "Risotto con mariscos variados",
         price: "€16.50",
-        image: "https://images.unsplash.com/photo-1633964913295-ceb43826e7cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+        image: "/lovable-uploads/04eccf24-3f5f-4664-b072-3ca815a6df41.png"
       }
     ]
   },
@@ -126,7 +125,7 @@ const menuData: MenuCategory[] = [
         name: "Lasaña de Carne",
         description: "Lasaña tradicional con salsa boloñesa",
         price: "€13.90",
-        image: "https://images.unsplash.com/photo-1619895092538-128f6e1d33fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        image: "/lovable-uploads/62d9b7e1-367b-4d77-a796-17a3e3e5342e.png",
         popular: true
       },
       {
@@ -139,7 +138,7 @@ const menuData: MenuCategory[] = [
         name: "Lasaña Vegetal",
         description: "Con verduras de temporada",
         price: "€12.90",
-        image: "https://images.unsplash.com/photo-1633436375173-d67ed2d23fd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+        image: "https://images.unsplash.com/photo-1570197788417-0e82375c9371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2012&q=80"
       }
     ]
   },
@@ -348,10 +347,10 @@ const MenuSection: React.FC = () => {
             "Nuestro menú cambia según la temporada para ofrecer los ingredientes más frescos disponibles."
           </p>
           <a 
-            href="#reservations" 
+            href="tel:+34828903819" 
             className="inline-block bg-restaurant-primary text-white py-3 px-6 rounded-lg hover:bg-restaurant-primary/90 transition-colors font-medium"
           >
-            Reserva Tu Mesa
+            Llama para Reservar
           </a>
         </div>
       </div>
