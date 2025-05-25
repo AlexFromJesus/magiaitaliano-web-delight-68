@@ -66,8 +66,8 @@ const AboutSection: React.FC = () => {
           >
             <div className="absolute inset-0 rounded-lg overflow-hidden">
               <img 
-                src="/lovable-uploads/94a19ffc-1deb-490d-9769-3de75d4e4e7f.png" 
-                alt="Exterior del restaurante Mangiaitaliano" 
+                src="/lovable-uploads/c9bbfde9-1830-492b-a2e0-c7a65088fda3.png" 
+                alt="Deliciosa ensalada italiana con bresaola, rúcula, champiñones y queso parmesano" 
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
